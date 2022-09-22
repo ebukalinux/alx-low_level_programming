@@ -1,4 +1,4 @@
-#include “main.h”
+#include "main.h"
 
 /**
 *  _strcmp – Function which compare two strings and
@@ -16,14 +16,14 @@ int _strcmp(char *s1, char *s2)
 
 	while (1)
 	{
-		if (s[i] == ‘\0’ && s2 [i] == ‘\0’)
+		if (s[i] == '\0'&& s2 [i] == '\0')
 			break;
-		else if (s1[i] == ‘\0’)
+		else if (s1[i] == '\0')
 		{
 			diff = s2[i];
 			break;
 		}
-		else if (s2[i] == ‘\0’)
+		else if (s2[i] == '\0')
 		{
 			diff = s1 [i];
 			break;
