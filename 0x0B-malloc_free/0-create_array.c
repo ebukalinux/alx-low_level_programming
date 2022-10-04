@@ -5,7 +5,7 @@
  * @size: size of the array.
  * @c: storaged char
  *
- * return: pointer of an arrays of chars
+ * Return: pointer of an array of chars
  */
 char *create_array(unsigned int size, char c)
 {
@@ -13,14 +13,13 @@ char *create_array(unsigned int size, char c)
 	unsigned int i;
 
 	if (size == 0)
-		retuen (NULL);
+		return (NULL);
 
 	cr = malloc(sizeof(c) * size);
 
 	if (cr == NULL)
 		return (NULL);
 
-	
 	for (i = 0; i < size; i++)
 		cr[i] = c;
 
